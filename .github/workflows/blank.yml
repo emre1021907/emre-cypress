@@ -73,7 +73,7 @@ jobs:
   # anchor definitions yet, thus we cannot put same steps into a template object yet
   test1:
     name: Cypress test 1
-    runs-on: windows-latest
+    runs-on: ubuntu-18.04
     needs: install
     steps:
       - uses: actions/checkout@master
@@ -137,7 +137,7 @@ jobs:
 
   test2:
     name: Cypress test 2
-    runs-on: windows-latest
+    runs-on: ubuntu-18.04
     needs: install
     steps:
       - uses: actions/checkout@master
@@ -201,7 +201,7 @@ jobs:
 
   test3:
     name: Cypress test 3
-    runs-on: windows-latest
+    runs-on: ubuntu-18.04
     needs: install
     steps:
       - uses: actions/checkout@master 
