@@ -1,4 +1,8 @@
 version: 2.1
+name: Cypress parallel tests
+
+on: push
+
 orbs:
   cypress: cypress-io/cypress@2
 workflows:
