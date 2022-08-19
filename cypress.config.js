@@ -20,6 +20,7 @@ module.exports = defineConfig({
 
   env: {
     login_url: 'emrekoseds',
-    products_url: '/products'
+    products_url: '/products',
+    GITHUB_TOKEN: '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' 
   }
 })
