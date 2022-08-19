@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-import { Login } from "./pageObjects/login.cy"
+import { Login } from "../../pageObjects/login.cy"
 
 
 const login = new Login
