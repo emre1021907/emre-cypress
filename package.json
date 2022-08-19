@@ -1,6 +1,8 @@
 {
   "devDependencies": {
-    "cypress": "^10.2.0"
+    "cypress": "^10.2.0",
+    "node-sass": "^7.0.1",
+    "sass-graph": "^4.0.0"
   },
   "name": "emre",
   "version": "1.0.0",
@@ -46,7 +48,6 @@
     "concat-map": "^0.0.1",
     "core-util-is": "^1.0.2",
     "cross-spawn": "^7.0.3",
-    "dart-sass": "^1.25.0",
     "dashdash": "^1.14.1",
     "dayjs": "^1.11.3",
     "debug": "^4.3.4",
@@ -110,7 +111,6 @@
     "minimatch": "^3.1.2",
     "minimist": "^1.2.6",
     "ms": "^2.1.2",
-    "npm": "^8.17.0",
     "npm-run-path": "^4.0.1",
     "once": "^1.4.0",
     "onetime": "^5.1.2",
@@ -134,6 +134,7 @@
     "rxjs": "^7.5.5",
     "safe-buffer": "^5.2.1",
     "safer-buffer": "^2.1.2",
+    "scss-tokenizer": "^0.4.3",
     "semver": "^7.3.7",
     "shebang-command": "^2.0.0",
     "shebang-regex": "^3.0.0",
@@ -163,7 +164,9 @@
     "yauzl": "^2.10.0"
   },
   "scripts": {
-    "test": "Emre test",
+    "pretest": "echo im inside pretest",
+    "test": "echo Emre test",
+    "posttest": "echo im inside posttest",
     "cypress:open": "cypress open"
   },
   "author": "",

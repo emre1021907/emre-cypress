@@ -14,6 +14,8 @@ module.exports = defineConfig({
     video: true,
     videoCompression: 32,
     videoUploadOnPasses: true,
+    watchForFileChanges: true,
+    chromeWebSecurity: false
   },
 
   env: {
