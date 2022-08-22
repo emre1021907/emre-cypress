@@ -10,7 +10,7 @@
 //
 //
 // -- This is a parent command --
-Cypress.Commands.add('login', (yazi) => { 
+Cypress.Commands.add('emre', (yazi) => { 
     cy.log(yazi)
  })
 //

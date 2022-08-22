@@ -23,4 +23,4 @@ jobs:
           group: 'Actions example'
         env:          
           CYPRESS_RECORD_KEY: 7f853bed-6671-4180-a1b7-bb2f2339b289
-          GITHUB_TOKEN: 
+          GITHUB_TOKEN: ${{ G }
