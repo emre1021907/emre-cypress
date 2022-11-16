@@ -1,13 +1,13 @@
 /// <reference types="cypress" />
 
-context('Actions', () => {
+context('Actions',  () => {
   beforeEach(() => {
     cy.visit('https://example.cypress.io/commands/actions')
   })
 
   // https://on.cypress.io/interacting-with-elements
 
-  it('.type() - type into a DOM element', () => {
+  it('.type() - type into a DOM element',  () => {
     // https://on.cypress.io/type
     cy.get('.action-email')
       .type('fake@email.com').should('have.value', 'fake@email.com')
@@ -33,7 +33,7 @@ context('Actions', () => {
       .should('have.value', 'disabled error checking')
   })
 
-  it('.focus() - focus on a DOM element', () => {
+  it('.focus() - focus on a DOM element', { tags: '@smoke' }, () => {
     // https://on.cypress.io/focus
     cy.get('.action-focus').focus()
       .should('have.class', 'focus')

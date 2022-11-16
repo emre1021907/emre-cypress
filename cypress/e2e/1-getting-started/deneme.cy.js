@@ -1,22 +1,41 @@
 /// <reference types="cypress" />
 
-import { Login } from "../../pageObjects/login.cy"
 
 
-const login = new Login
+// const tests = require("../../fixtures/example.json")
 
-describe('example to-do app', () => {
+// import { Login } from "../../deneme/login.cy"
+// const login = new Login()
 
-    it('deneme',() => {
-        cy.visit("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
-        login.clickArama()
-        cy.get('.gLFyf').focus().blur()
-        login.clickemrearama()
-        login.goToViki()
-        login.clickZeytinburnu()
-        cy.emre("rer")
+//const login = new Login
 
+// describe('example to-do app', () => {
+
+
+// tests.forEach(test => {
+//     it('emre', {keystrokeDelay: 1000}, () => {
+//         cy.visit("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
+//         login.navigate()
+        
+//         //cy.visit()
+//     })
+
+// })
+    
+// })
+
+
+describe('Test an alert and the text displaying', function() {
+    it('Verify alert and its text content', function(){
+        cy.visit('http://www.seleniumeasy.com/test/javascript-alert-box-demo.html')    
+    
+        const stub = cy.stub()  
+        cy.on ('window:alert', stub)
+        cy.get('button').contains('Click me!').click()
+        .then(() => {
+          expect(stub.getCall(0)).to.be.calledWith('I am an alert box!')      
+        })  
+    
+        })
+    
     })
-})
-
-

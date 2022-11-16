@@ -3,7 +3,7 @@
 const { eq } = require("lodash")
 
 
-describe('example of orangehr', () => {
+describe('example of orangehr', { tags: '@smoke' }, () => {
 
     it('mousehoverdeneme', () => {
         cy.visit("https://www.asus.com/tr/Motherboards-Components/Motherboards/All-series/PRIME-B450M-K/HelpDesk_BIOS/")

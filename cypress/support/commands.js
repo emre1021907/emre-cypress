@@ -13,6 +13,10 @@
 Cypress.Commands.add('emre', (yazi) => { 
     cy.log(yazi)
  })
+
+Cypress.Commands.add('birsey',() => {
+    cy.log("commandsın içindeyim ke")
+})
 //
 //
 // -- This is a child command --

@@ -1,0 +1,117 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-08-24T13:04:08.349Z",
+    "end": "2022-08-24T13:04:12.493Z",
+    "duration": 4144,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ee92ea05-799d-4240-80d7-171c1345ac35",
+      "title": "",
+      "fullFile": "cypress\\e2e\\1-getting-started\\denemeorange.cy.js",
+      "file": "cypress\\e2e\\1-getting-started\\denemeorange.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "328f9633-9fb9-4f6c-be73-f1959fc120ac",
+          "title": "example of orangehr",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "mousehoverdeneme",
+              "fullTitle": "example of orangehr mousehoverdeneme",
+              "timedOut": null,
+              "duration": 2202,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"\\\\denemeorange.cy.js\\\\example of orangehr -- mousehoverdeneme (failed).png\"\n      }\n    ]\n  ]\n}",
+              "code": "cy.visit(\"https://www.asus.com/tr/Motherboards-Components/Motherboards/All-series/PRIME-B450M-K/HelpDesk_BIOS/\");\ncy.viewport(1920, 1080);\ncy.get('[style=\"display: flex;\"] > .ProductSupportDriverBIOS__boxContent__d7BZK > .ProductSupportDriverBIOS__contentLeft__3F4tG > .ProductSupportDriverBIOS__version__3hP9J').then($el => {\n  const emre = $el.text();\n  cy.wrap(emre).should('include', \"Sürüm 3802\");\n});",
+              "err": {
+                "message": "TypeError: The following error originated from your application code, not from Cypress. It was caused by an unhandled promise rejection.\n\n  > Cannot read properties of undefined (reading 'offsetWidth')\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "TypeError: The following error originated from your application code, not from Cypress. It was caused by an unhandled promise rejection.\n\n  > Cannot read properties of undefined (reading 'offsetWidth')\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at t.layoutJudge (https://www.asus.com/_nuxt/c0665.js:1:123547)\n    at t.headerLayerTwoStyle (https://www.asus.com/_nuxt/c0665.js:1:122748)\n    at https://www.asus.com/_nuxt/c0665.js:1:120750",
+                "diff": null
+              },
+              "uuid": "e517eeb6-829e-44c8-b6b3-52129d99fa36",
+              "parentUUID": "328f9633-9fb9-4f6c-be73-f1959fc120ac",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "e517eeb6-829e-44c8-b6b3-52129d99fa36"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 2202,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reporterEnabled": "mochawesome",
+        "mochawesomeReporterOptions": {
+          "reportDir": "cypress/reports/mocha",
+          "quite": true,
+          "overwrite": false,
+          "html": true,
+          "json": true
+        },
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
