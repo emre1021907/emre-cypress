@@ -2,8 +2,11 @@ version: 2.1
 orbs:
   cypress: cypress-io/cypress@3
 workflows:
-  test:
-    jobs:
-      - cypress/run:
-          install-browsers: true
-          start-command: 'npm run test'
+    example-workflow:
+      jobs:
+        - cypress/run:
+            install-command: npm install 
+            include-branch-in-node-cache-key: false 
+            install-browsers: false 
+            package-manager: npm 
+            cypress-command: npm run test 
